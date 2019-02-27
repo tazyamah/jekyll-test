@@ -1,63 +1,11 @@
 docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
   - title: トップ
-    url: "/top1"
+    url: "/"
+  - title: アーキテクチャ
     children:
-      - title: title1
-        url: "/top1/title1"
-      - title: title2
-        url: "/top1/title2"
-  - title: トップ2
-    url: "/top2"
-  - title: トップ3
-    url: "/top3"
+      - title: 三層構成
+        url: "/architectures/3-tier"
+  - title: デザインパターン
     children:
-      - title: title1
-        url: "/top3/title1"
-      - title: title2
-        url: "/top3/title2"
-        children:
-          - title: mago
-            url: "/top3/title2/mago"
+      - title: ボリュームの複製
+        url: "/patterns/clone-volume"

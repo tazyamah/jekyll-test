@@ -13,15 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: SolutionGuide
+masthead_title: SolutionGuide
+email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Awesome SolutionGuide!
 baseurl: "/jekyll-test" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 destination: docs
+include:
+  - _pages
+  - assets/architectures
+  - assets/patterns
 
 # Build settings
 markdown: kramdown
@@ -48,6 +51,16 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+collections:
+  architectures:
+    output: true
+    permalink: /:collection/:path
+  patterns:
+    output: true
+    permalink: /:collection/:path
+
+
 defaults:
   - scope:
       path: ""
@@ -55,3 +68,17 @@ defaults:
     values:
       sidebar:
         nav: "docs"
+  - scope:
+      path: ""
+      type: architectures
+    values:
+      sidebar:
+        nav: "docs"
+  - scope:
+      path: ""
+      type: patterns
+    values:
+      sidebar:
+        nav: "docs"
+
+
