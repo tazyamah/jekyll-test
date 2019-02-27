@@ -5,7 +5,7 @@ var store = [{
         "url": "/jekyll-test/architectures/3-tier",
         "teaser":null},{
         "title": "CloneVolume",
-        "excerpt":"clone volume   ","categories": [],
+        "excerpt":"clone volume     ","categories": [],
         "tags": [],
         "url": "/jekyll-test/patterns/clone-volume",
         "teaser":null},{
